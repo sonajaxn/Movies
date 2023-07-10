@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+        <h3>Name</h3>
+        <input type="text" name="name" placeholder="Movie name"><br>
+        <h3>Description</h3>
+        <input type="text" name="desc" placeholder="Movie description"><br>
+        <h3>Year</h3>
+        <input type="text" name="year" placeholder="Movie year"><br>
+        <h3>Image</h3>
+        <input type="file" name="img">
+        <input type="submit">
+        
+
+</form>
+{% endblock %}

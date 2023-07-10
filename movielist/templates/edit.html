@@ -1,0 +1,17 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <style>
+        body {
+          background-color: hwb(0 89% 8%); /* Set background color */
+          color: hsl(238, 94%, 6%); /* Set font color */
+        }
+    
+        form {
+          background-color: hsl(0, 24%, 53%); /* Set form background color */
+          padding: 10px;
+        }
+      </style>
+    {{form.as_p}}
+    <input type="submit">
+
+</form>

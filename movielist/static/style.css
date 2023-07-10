@@ -1,0 +1,8 @@
+body{
+    background-color:hwb(336 72% 22%) ;
+}
+
+.cards{
+    flex-direction: column;
+    background-color: red; 
+}
