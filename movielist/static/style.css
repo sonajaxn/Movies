@@ -1,8 +1,8 @@
-body{
-    background-color:hwb(336 72% 22%) ;
+.body{
+    background-color:hwb(336 21% 56%) ;
 }
 
-.cards{
+/* .cards{
     flex-direction: column;
     background-color: red; 
-}
+} */

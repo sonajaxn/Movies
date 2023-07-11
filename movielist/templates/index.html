@@ -4,25 +4,35 @@
 {% load static %}
 {% block body %}
 
+
+
 <style>
-  .container{
-    background-color: aqua;
-  }
+  
+  body{
+    background-color:hwb(336 21% 56%) ;
+}
+
 </style>
+
  
 <div class="conatiner">
+  <div class="row">
   <style>
     .cards {
-      flex-direction: column;
-      display: table-cell;
-    border-width: 100;
-    border-color: black;
-    border: 10px;
-    width: 324px;
-    padding: 30px;
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 10px solid #e0d8d8;
+        width: 324px;
+        padding: 30px;
+        margin: 10px;
+    
 }
     
-  </style>
+</style>
+  <div class="conatiner">
+    <div class="row">
   {% for i in movie_list %}
 
   <div class="cards">
@@ -37,6 +47,8 @@
   </div>
     {% endfor %}
 </div>
+</div>
+
 
      
 {% endblock %}

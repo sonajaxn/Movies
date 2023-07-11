@@ -18,7 +18,7 @@ def detail(request,movie_id):
 
 def add_movie(request):
     if request.method=="POST":
-        name=request.POST.get('name',)
+        name=request.POST.get('name',) 
         desc=request.POST.get('desc',)
         year=request.POST.get('year',)
         img=request.FILES['img']
